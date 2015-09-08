@@ -44,19 +44,21 @@ int main(void)
     return 0;
 }
 
-double GetPointDistance(Point A, Point B)
+//The functions below are used to calculate area based on herons method(Hero's method)
+
+double GetPointDistance(Point A, Point B) //This function is used to get the side length between two points
 {
     double distance = sqrt(pow((A.getX() - B.getX()),2) + pow((A.getY() - B.getY()),2) + pow((A.getZ() - B.getZ()),2));
     return distance;
 }
 
-double GetSemiPerimeter(double &A, double &B, double &C)
+double GetSemiPerimeter(double &A, double &B, double &C) //Gets the SemiPerimeter used in herons formula based on side lengths
 {
     double s = (A+B+C)/2;
     return s;
 }
 
-double CalculateArea(Point &A, Point &B, Point &C)
+double CalculateArea(Point &A, Point &B, Point &C) //Herons formula.
 {
     double sideA = GetPointDistance(B, C);
     double sideB = GetPointDistance(A, C);

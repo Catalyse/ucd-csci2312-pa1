@@ -1,7 +1,7 @@
 #include "Point.h"
 
 // Default constructor
-// Initializes the point to (0.0, 0.0)
+// Initializes the point to (0.0, 0.0, 0.0)
 Point::Point()
 {
     x = 0.0;
