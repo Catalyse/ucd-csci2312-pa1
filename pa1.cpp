@@ -15,7 +15,7 @@ double GetPointDistance(Point A, Point B);
 
 int main(void)
 {
-    int setX, setY, setZ;
+    double setX, setY, setZ;
 
     //The next section will initialize all three points via the constructor.
     cout << "Welcome to the 3d Triangle Area Calculation program." << endl;
